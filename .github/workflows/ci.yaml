@@ -23,6 +23,8 @@ jobs:
         run: |
           go fmt ./...
           go vet ./...
+        working-directory: ./my-inventory
       - name: Run tests
-        run: got test
+        run: go test ./...
+        working-directory: ./my-inventory
             
