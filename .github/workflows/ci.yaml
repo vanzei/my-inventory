@@ -24,5 +24,5 @@ jobs:
           go fmt ./...
           go vet ./...
       - name: Run tests
-        run: got test
+        run: go test
             
